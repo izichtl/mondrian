@@ -1,30 +1,68 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
-</template>
+  <div class="app mobile">
+        <div class="head">
+          <ul>
+              <li>.</li>
+              <li>.</li>
+          </ul>
+        </div> 
+        <div class="left"></div> 
+        <div class="contentGrid">
+            <div class="blue">B</div>
+            <div class="blue">B</div>
+            <div class="white">W</div>
+            <div class="yellow">Y</div>
 
+
+        </div> 
+        <div class="right"></div> 
+        <div class="foot">
+          <ul>
+              <li>.</li>
+              <li>.</li>
+          </ul>
+        </div> 
+  </div>
+</template>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.app {
+  display: grid;
+  padding: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  height: 100vh;
+}
+.mobile{
+  grid-template-columns: 1fr 20fr 1fr;
+  grid-template-rows: 1fr 20fr 1fr;
+
+}
+.head{
+  background-color: white;
+  grid-column: 1 /span 3;
+  grid-row: 1;
+}
+.left{
+  grid-column: 1;
+  grid-row: 2;
+}
+.contentGrid{
+  background-color: #45d169;
+  grid-column: 2;
+  grid-row: 2;
+}
+.right{
+  grid-column: 3;
+  grid-row: 2;
+}
+.foot{
+  grid-column: 1/ span 3;
+  grid-row: 3;
 }
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
