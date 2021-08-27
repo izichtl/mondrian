@@ -3,3 +3,23 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
+
+
+     <h1>{{ msg }}</h1>
+
+
+
+     <div class="item box05">B</div>
+    <div class="item box06">B</div>
+    <div class="item box07">W</div>
+    <div class="item box08">Y</div>
+
+    <div class="item box09">B</div>
+    <div class="item box10">B</div>
+    <div class="item box11">W</div>
+    <div class="item box12">Y</div>
+
+    <div class="item box13">B</div>
+    <div class="item box14">B</div>
+    <div class="item box15">W</div>
+    <div class="item box16">Y</div>
