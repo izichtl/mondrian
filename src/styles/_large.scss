@@ -1,6 +1,11 @@
 @media (min-width:$sizeLargeTwo){
   
-
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 25px;
+    }
     .size{
         grid-template-columns: 4fr 20fr 4fr;
         grid-template-rows: 5fr 20fr 5fr;
