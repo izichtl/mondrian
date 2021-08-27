@@ -31,9 +31,19 @@
 <script>
 export default {
   name: 'Container',
-  props: {
+  data () {
+    return {
+      result: ""
+    }
+  },
+  props:  {
     msg: String
-  }
+  },
+  methods:{
+    myFunction: function () {	
+		this.result = screen.width+"px";
+    }
+   }
 }
 </script>
 
@@ -41,116 +51,28 @@ export default {
 
 <style lang="scss" scoped>
 @import 'src/styles/variables';
+@import 'src/styles/mContainer';
+@import 'src/styles/mdContainer';
+@import 'src/styles/lContainer';
 
 .contentGrid{
-  height: 100%;
-  display: grid;
-  grid-gap: 8px;
-}
+    height: 100%;
+    display: grid;
+  }
+  
+.item{
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+   }
+.contentGrid{
+          background-color: $preto;
+      }
 .gridOne{
-  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows:     1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
- 
- }
- .item{
-   display: flex;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
- }
-.box01{
-  background-color: $azul;
-  grid-column: 1/3;
-  grid-row: 1/2;
-}
-.box02{
-  background-color: $azul;
-  grid-column: 3/5;
-  grid-row: 1/2;
-}
-.box03{
-  background-color: $branco;
-  grid-column: 5 / 11;
-  grid-row: 1/2;
-}
-.box04{
-  background-color: $amarelo;
-  grid-column: 11 / 13;
-  grid-row: 1/2;
-}
-.box05{
-  background-color: $branco;
-  grid-column: 1 / 5;
-  grid-row: 2/7;
-}
-.box06{
-  background-color: $vermelho;
-  grid-column: 5 / 11 ;
-  grid-row: 2/6;
-}
-.box07{
-  background-color: $branco;
-  grid-column: 11 / 13 ;
-  grid-row: 2/6;
-}
-.box08{
-  background-color: $branco;
-  grid-column: 5 / 11;
-  grid-row: 6/7;
-}
-.box09{
-  background-color: $vermelho;
-  grid-column: 11 / 13 ;
-  grid-row: 6/7;
-}
-.box10{
-  background-color: $branco;
-  grid-column: 1 / 3;
-  grid-row: 7/8;
-}
-.box11{
-  background-color: $amarelo;
-  grid-column: 3 / 9;
-  grid-row: 7/8;
-}
-.box12{
-  background-color: $amarelo;
-  grid-column: 9/ 11;
-  grid-row: 7/8;
-}
-.box13{
-  background-color: $branco;
-  grid-column: 11 / 13;
-  grid-row: 7 / 8;
-}
-.box14{
-  background-color: $vermelho;
-  grid-column: 1 / 3;
-  grid-row: 8 /13;
-}
-.box15{
-  background-color: $branco;
-  grid-column: 3 / 9;
-  grid-row: 8 /11;
-}
-.box16{
-  background-color: $azul;
-  grid-column: 9 /11;
-  grid-row: 8 /11;
-}
-.box17{
-  background-color: $branco;
-  grid-column: 11/13;
-  grid-row: 8 /11;
-}
-.box18{
-  background-color: $branco;
-  grid-column: 3/9;
-  grid-row: 11 /13;
-}
-.box19{
-  background-color: $amarelo;
-  grid-column: 9/13;
-  grid-row: 11 /13;
-}
+      grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows:     1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     
+     }
+
 </style>

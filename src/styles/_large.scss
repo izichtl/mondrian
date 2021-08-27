@@ -1,0 +1,29 @@
+@media (min-width:$sizeLargeTwo){
+  
+
+    .size{
+        grid-template-columns: 4fr 20fr 4fr;
+        grid-template-rows: 5fr 20fr 5fr;
+      }
+      .head{
+        grid-column: 1 /span 3;
+        grid-row: 1;
+      }
+      .left{
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .content{
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .right{
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .foot{
+        grid-column: 1/ span 3;
+        grid-row: 3;
+      }
+    }
+    

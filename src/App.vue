@@ -2,8 +2,6 @@
   <router-view/>
 </template>
 <style lang="scss">
-@import 'src/styles/variables';
-@import 'src/styles/widgets';
 *{
   margin: 0px;
   padding: 0px;
