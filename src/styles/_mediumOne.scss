@@ -1,4 +1,7 @@
 @media (min-width:$sizeMediumOne) and (max-width:$sizeMediumTwo){
+    h3{
+      font-size: 25px;
+    }
     .size{
         grid-template-columns: 3fr 20fr 3fr;
         grid-template-rows: 1fr 20fr 1fr;

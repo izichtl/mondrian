@@ -1,4 +1,7 @@
 @media (max-width: $sizeMobile){
+  h3{
+    font-size: 23px;
+  }
   .size{
     grid-template-columns: 1fr 20fr 1fr;
     grid-template-rows: 1fr 20fr 1fr;
