@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
-h3{
+h3, h4{
   font-family: 'Teko', sans-serif;
 }
 p{

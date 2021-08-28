@@ -1,7 +1,11 @@
 <template>
   <div class="contentGrid gridOne">
-      <div v-for="(item, index) in 19" v-bind:key="item" class="item" :class="this.class+(index+1)">
-        <a v-if="index+1 == 15" v-on:click="myF"><p>A arte abstrata é a verdadeira visão da realidade.</p></a>    
+      <div class="sobre">
+      <p>SPA desenvolvida em vue/sass como estudo e homenagem ao modernista Piet Mondrian.</p>
+      <br>
+      <hr>
+      <br>
+      <p>Desenvolvido por <a href="https://github.com/izichtl"> Ivan Zichtl.</a></p>
       </div>
   </div>
 </template>
@@ -10,27 +14,13 @@
 export default {
   name: 'Container',
   data () {
-    return {
-      result: "",
-      class: "sqr",
-      array: [1, 2, 3, 4, 5],
-      classObject: {
-        box06: true,
-        sqr06: false
-  }
-    }
+    
   },
   props:  {
     msg: String
   },
   methods:{
-    myF: function () {
-        if(this.class === "box"){
-          this.class = "sqr";
-        }else{
-          this.class = "box";
-        }
-    }
+    
    }
 }
 </script>
@@ -56,15 +46,18 @@ export default {
      justify-content: center;
    }
 .contentGrid{
-          background-color: $preto;
+          background-color: $branco;
       }
 .gridOne{
       grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows:     1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
      
      }
-p{
-  cursor: pointer;
+.sobre{
+  padding:10px;
+  background-color: $branco;
+  grid-column: 3/11;
+  grid-row: 3/10
 }
 
 </style>

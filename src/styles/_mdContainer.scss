@@ -1,6 +1,6 @@
 @media (min-width:$sizeMediumOne) and (max-width:$sizeLargeOne){
     .contentGrid{
-      grid-gap: 10px;
+      grid-gap: 9px;
     }
     .box1{
       background-color: $azul;
@@ -100,7 +100,7 @@
     
 
     .sqr1{
-      background-color: $amarelo;
+      background-color: $branco;
       grid-column: 1/3;
       grid-row: 1/2;
     }
