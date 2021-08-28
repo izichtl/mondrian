@@ -4,47 +4,47 @@
         grid-gap: 12px;
       }
 
-      .box01{
+      .box1{
         background-color: $azul;
         grid-column: 1/2;
         grid-row: 11/13;
       }
-      .box02{
+      .box2{
         background-color: $azul;
         grid-column: 1/2;
         grid-row: 9/11;
       }
-      .box03{
+      .box3{
         background-color: $branco;
         grid-column: 1/2;
         grid-row: 3/9;
       }
-      .box04{
+      .box4{
         background-color: $amarelo;
         grid-column: 1/2;
         grid-row: 1/3;
       }
-      .box05{
+      .box5{
         background-color: $branco;
         grid-column: 2/6;
         grid-row: 9/13;
       }
-      .box06{
+      .box6{
         background-color: $vermelho;
         grid-column: 2/5;
         grid-row: 3/9;
       }
-      .box07{
+      .box7{
         background-color: $branco;
         grid-column: 2/5;
         grid-row: 1/3;
       }
-      .box08{
+      .box8{
         background-color: $branco;
         grid-column: 5/6;
         grid-row: 3/9;
       }
-      .box09{
+      .box9{
         background-color: $vermelho;
         grid-column: 5/6;
         grid-row: 1/3;
@@ -98,5 +98,104 @@
         background-color: $amarelo;
         grid-column: 10/13;
         grid-row: 1/5;
+      }
+      
+
+
+      
+      .sqr1{
+        background-color: $amarelo;
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .sqr2{
+        background-color: $branco;
+        grid-column: 3/8;
+        grid-row: 1/2;
+      }
+      .sqr3{
+        background-color: $vermelho;
+        grid-column: 8/13;
+        grid-row: 1/2;
+      }
+      .sqr4{
+        background-color: $branco;
+        grid-column: 8/13;
+        grid-row: 9/13;
+      }
+      .sqr5{
+        background-color: $branco;
+        grid-column: 1/3;
+        grid-row: 2/5;
+      }
+      .sqr6{
+        background-color: $amarelo;
+        grid-column: 3/8;
+        grid-row: 9/12;
+      }
+      .sqr7{
+        background-color: $azul;
+        grid-column: 3/8;
+        grid-row: 2/5;
+      }
+      .sqr8{
+        background-color: $branco;
+        grid-column: 8/11;
+        grid-row: 2/5;
+      }
+      .sqr9{
+        background-color: $amarelo;
+        grid-column: 11/13;
+        grid-row: 2/4;
+      }
+      .sqr10{
+        background-color: $preto;
+        grid-column: 11/13;
+        grid-row: 4/5;
+      }
+      .sqr11{
+        background-color: $branco;
+        grid-column: 1/3;
+        grid-row: 5/7;
+      }
+      .sqr15{
+        background-color: $branco;
+        grid-column: 3/11;
+        grid-row: 5/7;
+      }
+      .sqr13{
+        background-color: $vermelho;
+        grid-column: 11/13;
+        grid-row: 5/7;
+      }
+      .sqr14{
+        background-color: $azul;
+        grid-column: 1/3;
+        grid-row: 7/9;
+      }
+      .sqr12{
+        background-color: $branco;
+        grid-column: 3/8;
+        grid-row: 7/9;
+      }
+      .sqr16{
+        background-color: $branco;
+        grid-column: 8/11;
+        grid-row: 7/9;
+      }
+      .sqr17{
+        background-color: $branco;
+        grid-column: 11/13;
+        grid-row: 7/9;
+      }
+      .sqr18{
+        background-color: $azul;
+        grid-column: 1/3;
+        grid-row: 9/13;
+      }
+      .sqr19{
+        background-color: $vermelho;
+        grid-column: 3/8;
+        grid-row: 12/13;
       }
 } 

@@ -1,32 +1,14 @@
 <template>
   <div class="contentGrid gridOne">
- 
-    <div class="item box01"></div>
-    <div class="item box02"></div>
-    <div class="item box03"></div>
-    <div class="item box04"></div>
-    <div class="item box05"></div>
-    <div class="item box06"></div>
-    <div class="item box07"></div>
-    <div class="item box08"></div>
-    <div class="item box09"></div>
-    <div class="item box10"></div>
-    <div class="item box11"></div>
-    <div class="item box12"></div>
-    <div class="item box13"></div>
-    <div class="item box14"></div>
-    <div class="item box15">
-      <p>A arte abstrata é a verdadeira visão da realidade.</p>
-    </div>
-    <div class="item box16"></div>
-    <div class="item box17"></div>
-    <div class="item box18"></div>
-    <div class="item box19"></div>
-    
+      <div v-for="(item, index) in 19" v-bind:key="item" class="item" :class="this.class+(index+1)">
+        <p v-if="index+1 == 15" >A arte abstrata é a verdadeira visão da realidade.</p>    
+
+        <a v-if="index+1 == 6" v-on:click="myF">Click!</a>
 
 
 
-    
+
+      </div>
   </div>
 </template>
 
@@ -35,15 +17,25 @@ export default {
   name: 'Container',
   data () {
     return {
-      result: ""
+      result: "",
+      class: "sqr",
+      array: [1, 2, 3, 4, 5],
+      classObject: {
+        box06: true,
+        sqr06: false
+  }
     }
   },
   props:  {
     msg: String
   },
   methods:{
-    myFunction: function () {	
-		this.result = screen.width+"px";
+    myF: function () {
+        if(this.class === "box"){
+          this.class = "sqr";
+        }else{
+          this.class = "box";
+        }
     }
    }
 }
@@ -77,6 +69,8 @@ export default {
       grid-template-rows:     1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
      
      }
-
+.sqr06{
+  background-color: blue;
+}
 
 </style>

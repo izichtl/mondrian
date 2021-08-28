@@ -23,3 +23,13 @@
     <div class="item box14">B</div>
     <div class="item box15">W</div>
     <div class="item box16">Y</div>
+
+
+
+    <a  v-on:click="myF">
+        {{this.classObject.box06}}
+        {{this.classObject.sqr06}}
+        </a>
+
+
+            <div  class="item" v-bind:class="classObject">
