@@ -7,12 +7,12 @@
         </div> 
         <div class="left"></div> 
         <div class="content">
-            <Container msg="Este é container"/>
+          <About />
         </div> 
         <div class="right"></div> 
         <div class="foot">
             
-            <h4><router-link to="/sobre">Sobre</router-link>
+            <h4><router-link to="/">Home</router-link>
             
             </h4>
             
@@ -22,13 +22,13 @@
 
 <script>
 // @ is an alias to /src
-import Container from '@/components/Container.vue'
+import About from '@/components/About.vue'
 
 
 export default {
-  name: 'Home',
+  name: 'Sobre',
   components: {
-    Container
+       About
   }
 }
 </script>
