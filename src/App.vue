@@ -3,7 +3,7 @@
 </template>
 <style lang="scss">
 @import 'src/styles/variables';
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
 *{
   margin: 0px;
   padding: 0px;
@@ -15,8 +15,11 @@
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
-h3 p{
-  font-family: 'Hina Mincho', serif;
+h3{
+  font-family: 'Teko', sans-serif;
+}
+p{
+  font-family: 'Teko', sans-serif;
 }
 a{
   text-decoration: none;

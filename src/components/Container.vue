@@ -1,10 +1,9 @@
 <template>
   <div class="contentGrid gridOne">
       <div v-for="(item, index) in 19" v-bind:key="item" class="item" :class="this.class+(index+1)">
-        <p v-if="index+1 == 15" >A arte abstrata é a verdadeira visão da realidade.</p>    
-
-        <a v-if="index+1 == 6" v-on:click="myF">Click!</a>
-
+        <a v-if="index+1 == 15" v-on:click="myF"><p>A arte abstrata é a verdadeira visão da realidade.</p></a>    
+        {{index+1}}
+        
 
 
 
